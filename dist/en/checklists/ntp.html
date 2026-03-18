@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NTP: what to think through | WOV Tech</title>
+  <meta name="description" content="Questions before designing NTP and time infrastructure: time sources, hybrid environments, drift monitoring, change management and incident procedures." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/en/checklists/ntp.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/checklisty/ntp.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/checklisty/ntp.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/checklists/ntp.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/checklisty/ntp.html" />
+  <meta property="og:title" content="NTP: what to think through | WOV Tech" />
+  <meta property="og:description" content="Questions before designing NTP and time infrastructure: time sources, hybrid environments, drift monitoring, change management and incident procedures." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/en/checklists/ntp.html" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/en/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Secure • Stable • Efficient</span></span>
+      </a>
+      <div class="menu">
+        <a href="/en/infrastructure-design.html">Infrastructure Design</a>
+        <a href="/en/services.html">Services</a>
+        <a href="/en/articles.html">Articles</a>
+        <a class="cta" href="/en/contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>NTP: what to think through before design</h1><p>Consistent time is the basis for authentication, certificates, logs and audit. With NTP, you need to address not only server availability, but also <b>synchronisation quality</b> and <b>change control</b>.</p><div class='notice' style='margin-top:16px'>The minimum baseline is multiple time sources, drift monitoring, clear ownership and an incident procedure.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Key questions</h2><ul class='list'><li>Are primary and backup time sources clearly defined?</li><li>How is synchronisation between on-prem and cloud handled?</li><li>Do you track offset/drift and sync status, not just server reachability?</li><li>Who can change NTP configuration and how are changes approved?</li><li>Do you have a runbook for time-drift incidents?</li></ul><div class='hr'></div><h2>Practical starting point</h2><p>Time issues often show up indirectly through TLS, Kerberos/SSO and log correlation. That is why NTP should be treated as an operable tier-0 service.</p><div class='hr'></div><h2>Related</h2><ul class='list'><li><a href='/en/services/infrastructure-monitoring.html'>Infrastructure monitoring</a></li><li><a href='/en/infrastructure-design/monitoring-vs-logs.html'>Monitoring vs logs</a></li><li><a href='/en/infrastructure-design/incident-and-change-processes.html'>Incident & change processes</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Secure • Stable • Efficient</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • Company ID 57413878 • Tax ID 2122704034 • VAT ID SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/en/privacy-policy.html">Privacy Policy</a>
+        <a href="/en/terms-and-conditions.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Design and stabilisation of IT infrastructure: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), infrastructure monitoring, log management and backup."}</script>
+</body>
+</html>

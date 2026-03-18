@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Přístupy & identita (IAM) | WOV Tech</title>
+  <meta name="description" content="Přístupy a identita (IAM) v návrhu infrastruktury: governance, auditovatelnost, least privilege, správa účtů a bezpečné přístupy dodavatelů." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/cs/navrh-infrastruktury/pristupy-a-identita.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/navrh-infrastruktury/pristupy-a-identita.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/navrh-infrastruktury/pristupy-a-identita.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/infrastructure-design/access-and-identity.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/navrh-infrastruktury/pristupy-a-identita.html" />
+  <meta property="og:title" content="Přístupy & identita (IAM) | WOV Tech" />
+  <meta property="og:description" content="Přístupy a identita (IAM) v návrhu infrastruktury: governance, auditovatelnost, least privilege, správa účtů a bezpečné přístupy dodavatelů." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/cs/navrh-infrastruktury/pristupy-a-identita.html" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Přeskočit na obsah</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Hlavná navigácia">
+      <a class="brand" href="/cs/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Bezpečné • Stabilní • Efektivní</span></span>
+      </a>
+      <div class="menu">
+        <a href="/cs/navrh-infrastruktury.html">Návrh infra</a>
+        <a href="/cs/sluzby.html">Služby</a>
+        <a href="/cs/clanky.html">Články</a>
+        <a class="cta" href="/cs/kontakt.html">Kontakt</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>Přístupy & identita (IAM): auditovatelnost a kontrola v infrastruktuře</h1><p>IAM je základ bezpečnosti i provozu. Pokud není jasné <b>kdo má jaká oprávnění</b>, <b>na jak dlouho</b> a <b>jak se to kontroluje</b>, infrastruktura zůstává neauditovatelná a riziková.</p><div class='notice' style='margin-top:16px'>Bez MFA, audit logů a odstranění sdílených přístupů jsou změny neauditovatelné a incidenty dražší.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Otázky, které si je třeba zodpovědět</h2><ul class='list'><li>Kdo má admin/root a kde jsou break-glass účty?</li><li>Jak vznikají a zanikají oprávnění (joiner/mover/leaver)?</li><li>Jsou role nastavené podle odpovědností a least privilege?</li><li>Je MFA povinné pro privileged role, VPN a admin konzole?</li><li>Máte centralizované audit logy a umíte je najít při incidentu?</li><li>Kde jsou uložené secrets a kdo je rotuje?</li><li>Jsou přístupy dodavatelů časově omezené a pravidelně revidované?</li></ul><div class='hr'></div><h2>Typická rizika v praxi</h2><ul class='list'><li><b>Sdílené účty a hesla:</b> neexistuje atribuce změn.</li><li><b>Trvalá admin práva:</b> privilegované role jsou default bez expirace.</li><li><b>Neexistující revize:</b> oprávnění se roky nemění.</li><li><b>Secrets v repozitářích:</b> klíče jsou v kódu bez rotace a vlastníka.</li></ul><div class='hr'></div><p><b>Související:</b></p><ul class='list'><li><a href='/cs/navrh-infrastruktury/zalohy-a-obnova.html'>Zálohy & obnova</a></li><li><a href='/cs/sluzby/cloud-aws-azure.html'>Cloud ops</a></li><li><a href='/cs/navrh-infrastruktury/incident-a-change-procesy.html'>Incident & Change procesy</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Bezpečné • Stabilní • Efektivní</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • IČO 57413878 • DIČ 2122704034 • IČ DPH SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/cs/ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+        <a href="/cs/obchodni-podminky.html">Obchodní podmínky</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Návrh a stabilizace IT infrastruktury: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), monitoring infrastruktury, log management a zálohování."}</script>
+</body>
+</html>

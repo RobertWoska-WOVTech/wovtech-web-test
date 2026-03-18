@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloud: čo si premyslieť | WOV Tech</title>
+  <meta name="description" content="Otázky pred návrhom cloudu (AWS/Azure/GCP): governance, prístupy, sieťový model, bezpečnosť, operability, obnova a náklady." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/checklisty/cloud-aws-azure.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/checklisty/cloud-aws-azure.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/checklisty/cloud-aws-azure.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/checklists/cloud-aws-azure.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/checklisty/cloud-aws-azure.html" />
+  <meta property="og:title" content="Cloud: čo si premyslieť | WOV Tech" />
+  <meta property="og:description" content="Otázky pred návrhom cloudu (AWS/Azure/GCP): governance, prístupy, sieťový model, bezpečnosť, operability, obnova a náklady." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/checklisty/cloud-aws-azure.html" />
+  <meta property="og:locale" content="sk_SK" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Preskočiť na obsah</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Hlavná navigácia">
+      <a class="brand" href="/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Bezpečné • Stabilné • Efektívne</span></span>
+      </a>
+      <div class="menu">
+        <a href="/navrh-infrastruktury.html">Návrh infra</a>
+        <a href="/sluzby.html">Služby</a>
+        <a href="/clanky.html">Články</a>
+        <a class="cta" href="/kontakt.html">Kontakt</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>Cloud (AWS/Azure/GCP): čo si premyslieť pred návrhom</h1><p>Cloud nie je len hosting. Je to <b>operačný model</b> a súbor pravidiel, ktoré určujú bezpečnosť, dostupnosť a náklady. Pred návrhom si ujasnite štandardy, prístupy, zmeny a obnovu.</p><div class='notice' style='margin-top:16px'>Cloud prináša rýchlosť, ale aj nové riziká, ak chýba governance. Minimum štandard je: jasné vlastníctvo, IAM + MFA, sieťové hranice, centralizované logy a monitoring, IaC a otestovaná obnova.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Kľúčové otázky</h2><ul class='list'><li>Kto je owner účtov/subscriptions a kto schvaľuje zmeny?</li><li>Ako je riešený admin/root prístup, MFA a audit?</li><li>Máte jasné rozdelenie prostredí, naming, tagging a policy baseline?</li><li>Robia sa zmeny cez IaC a pipeline, alebo ručne?</li><li>Ako je riešené prepojenie s on-prem, DNS a egress?</li><li>Sú logy a monitoring centralizované a existujú runbooky?</li><li>Máte definované RTO/RPO a testovanú obnovu?</li><li>Máte cost allocation, rozpočty a základné guardrails?</li></ul><div class='hr'></div><h2>Praktický štart</h2><p>Najprv nastavte <b>minimálnu landing zone</b> (prístupy, logovanie, policy baseline, sieťové hranice), potom zaveďte <b>IaC a režim zmien</b>. Až následne rozširujte služby a automatizácie.</p><div class='hr'></div><h2>Súvisiace</h2><ul class='list'><li><a href='/navrh-infrastruktury/pristupy-a-identita.html'>Prístupy & identita</a></li><li><a href='/navrh-infrastruktury/networking-v-infra-navrhu.html'>Networking v návrhu infra</a></li><li><a href='/navrh-infrastruktury/incident-a-change-procesy.html'>Incident & Change procesy</a></li><li><a href='/navrh-infrastruktury/zalohy-a-obnova.html'>Zálohy a obnova</a></li><li><a href='/navrh-infrastruktury/monitoring-vs-logy.html'>Monitoring vs logy</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Bezpečné • Stabilné • Efektívne</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • IČO 57413878 • DIČ 2122704034 • IČ DPH SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/ochrana-osobnych-udajov.html">Ochrana osobných údajov</a>
+        <a href="/obchodne-podmienky.html">Obchodné podmienky</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Návrh a stabilizácia IT infraštruktúry: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), monitoring infraštruktúry, log management a zálohovanie."}</script>
+</body>
+</html>

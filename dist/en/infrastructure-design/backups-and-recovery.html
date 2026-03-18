@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Backups and recovery | WOV Tech</title>
+  <meta name="description" content="Backup & recovery: what to think through so backups actually help during an incident." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/en/infrastructure-design/backups-and-recovery.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/navrh-infrastruktury/zalohy-a-obnova.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/navrh-infrastruktury/zalohy-a-obnova.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/infrastructure-design/backups-and-recovery.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/navrh-infrastruktury/zalohy-a-obnova.html" />
+  <meta property="og:title" content="Backups and recovery | WOV Tech" />
+  <meta property="og:description" content="Backup & recovery: what to think through so backups actually help during an incident." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/en/infrastructure-design/backups-and-recovery.html" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/en/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Secure • Stable • Efficient</span></span>
+      </a>
+      <div class="menu">
+        <a href="/en/infrastructure-design.html">Infrastructure Design</a>
+        <a href="/en/services.html">Services</a>
+        <a href="/en/articles.html">Articles</a>
+        <a class="cta" href="/en/contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>Backups and recovery: what companies think they have vs. what they can really restore</h1><p>A backup is not security. Without recovery it is just a stored file. In infrastructure design, the key question is <b>what can be restored</b> and <b>how fast</b>.</p><div class='notice' style='margin-top:16px'>A working backup is measured by recovery capability, not by a green job status.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Questions worth answering</h2><ul class='list'><li>What exactly are we backing up (data, configuration, infra state, secrets)?</li><li>What can we restore automatically and what still requires manual improvisation?</li><li>What are the RPO/RTO values for each service?</li><li>When did we last test recovery and what was the result?</li><li>Where are recovery credentials and keys stored?</li></ul><div class='hr'></div><h2>Typical risks in practice</h2><ul class='list'><li><b>Backup without recovery:</b> backups exist, but restore was never tested.</li><li><b>Shared access:</b> the backup platform uses the same accounts as production.</li><li><b>Identity not protected:</b> IAM, AD or cloud accounts are missing from recovery scope.</li><li><b>No runbook:</b> recovery becomes improvisation during incidents.</li></ul><div class='hr'></div><p><b>Related:</b></p><ul class='list'><li><a href='/en/services/backup-and-recovery.html'>Service: Backup & recovery</a></li><li><a href='/en/infrastructure-design/access-and-identity.html'>Access & identity</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Secure • Stable • Efficient</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • Company ID 57413878 • Tax ID 2122704034 • VAT ID SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/en/privacy-policy.html">Privacy Policy</a>
+        <a href="/en/terms-and-conditions.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Design and stabilisation of IT infrastructure: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), infrastructure monitoring, log management and backup."}</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+{
+  "home": {
+    "sk": "/",
+    "cs": "/cs/",
+    "en": "/en/"
+  },
+  "articles": {
+    "sk": "/clanky.html",
+    "cs": "/cs/clanky.html",
+    "en": "/en/articles.html"
+  },
+  "contact": {
+    "sk": "/kontakt.html",
+    "cs": "/cs/kontakt.html",
+    "en": "/en/contact.html"
+  },
+  "infra_design": {
+    "sk": "/navrh-infrastruktury.html",
+    "cs": "/cs/navrh-infrastruktury.html",
+    "en": "/en/infrastructure-design.html"
+  },
+  "terms": {
+    "sk": "/obchodne-podmienky.html",
+    "cs": "/cs/obchodni-podminky.html",
+    "en": "/en/terms-and-conditions.html"
+  },
+  "privacy": {
+    "sk": "/ochrana-osobnych-udajov.html",
+    "cs": "/cs/ochrana-osobnich-udaju.html",
+    "en": "/en/privacy-policy.html"
+  },
+  "services": {
+    "sk": "/sluzby.html",
+    "cs": "/cs/sluzby.html",
+    "en": "/en/services.html"
+  },
+  "service_cloud": {
+    "sk": "/sluzby/cloud-aws-azure.html",
+    "cs": "/cs/sluzby/cloud-aws-azure.html",
+    "en": "/en/services/cloud-aws-azure.html"
+  },
+  "service_ddi": {
+    "sk": "/sluzby/ddi-dns-dhcp-ipam.html",
+    "cs": "/cs/sluzby/ddi-dns-dhcp-ipam.html",
+    "en": "/en/services/ddi-dns-dhcp-ipam.html"
+  },
+  "service_logs": {
+    "sk": "/sluzby/log-management.html",
+    "cs": "/cs/sluzby/log-management.html",
+    "en": "/en/services/log-management.html"
+  },
+  "service_monitoring": {
+    "sk": "/sluzby/monitoring-infrastruktury.html",
+    "cs": "/cs/sluzby/monitoring-infrastruktury.html",
+    "en": "/en/services/infrastructure-monitoring.html"
+  },
+  "service_ntp": {
+    "sk": "/sluzby/ntp.html",
+    "cs": "/cs/sluzby/ntp.html",
+    "en": "/en/services/ntp.html"
+  },
+  "service_backup": {
+    "sk": "/sluzby/zalohy-a-obnova.html",
+    "cs": "/cs/sluzby/zalohy-a-obnova.html",
+    "en": "/en/services/backup-and-recovery.html"
+  },
+  "article_docs": {
+    "sk": "/navrh-infrastruktury/dokumentacia-a-runbooky.html",
+    "cs": "/cs/navrh-infrastruktury/dokumentace-a-runbooky.html",
+    "en": "/en/infrastructure-design/documentation-and-runbooks.html"
+  },
+  "article_incident_change": {
+    "sk": "/navrh-infrastruktury/incident-a-change-procesy.html",
+    "cs": "/cs/navrh-infrastruktury/incident-a-change-procesy.html",
+    "en": "/en/infrastructure-design/incident-and-change-processes.html"
+  },
+  "article_monitoring_vs_logs": {
+    "sk": "/navrh-infrastruktury/monitoring-vs-logy.html",
+    "cs": "/cs/navrh-infrastruktury/monitoring-vs-logy.html",
+    "en": "/en/infrastructure-design/monitoring-vs-logs.html"
+  },
+  "article_networking": {
+    "sk": "/navrh-infrastruktury/networking-v-infra-navrhu.html",
+    "cs": "/cs/navrh-infrastruktury/networking-v-navrhu-infrastruktury.html",
+    "en": "/en/infrastructure-design/networking-in-infrastructure-design.html"
+  },
+  "article_ntp_why": {
+    "sk": "/navrh-infrastruktury/ntp-preco-je-cas-kriticky.html",
+    "cs": "/cs/navrh-infrastruktury/ntp-proc-je-cas-kriticky.html",
+    "en": "/en/infrastructure-design/ntp-why-time-is-critical.html"
+  },
+  "article_access_identity": {
+    "sk": "/navrh-infrastruktury/pristupy-a-identita.html",
+    "cs": "/cs/navrh-infrastruktury/pristupy-a-identita.html",
+    "en": "/en/infrastructure-design/access-and-identity.html"
+  },
+  "article_backup": {
+    "sk": "/navrh-infrastruktury/zalohy-a-obnova.html",
+    "cs": "/cs/navrh-infrastruktury/zalohy-a-obnova.html",
+    "en": "/en/infrastructure-design/backups-and-recovery.html"
+  },
+  "check_cloud": {
+    "sk": "/checklisty/cloud-aws-azure.html",
+    "cs": "/cs/checklisty/cloud-aws-azure.html",
+    "en": "/en/checklists/cloud-aws-azure.html"
+  },
+  "check_ddi": {
+    "sk": "/checklisty/ddi-dns-dhcp-ipam.html",
+    "cs": "/cs/checklisty/ddi-dns-dhcp-ipam.html",
+    "en": "/en/checklists/ddi-dns-dhcp-ipam.html"
+  },
+  "check_logs": {
+    "sk": "/checklisty/log-management.html",
+    "cs": "/cs/checklisty/log-management.html",
+    "en": "/en/checklists/log-management.html"
+  },
+  "check_monitoring": {
+    "sk": "/checklisty/monitoring-infrastruktury.html",
+    "cs": "/cs/checklisty/monitoring-infrastruktury.html",
+    "en": "/en/checklists/infrastructure-monitoring.html"
+  },
+  "check_ntp": {
+    "sk": "/checklisty/ntp.html",
+    "cs": "/cs/checklisty/ntp.html",
+    "en": "/en/checklists/ntp.html"
+  },
+  "check_backup": {
+    "sk": "/checklisty/zalohy-a-obnova.html",
+    "cs": "/cs/checklisty/zalohy-a-obnova.html",
+    "en": "/en/checklists/backup-and-recovery.html"
+  },
+  "not_found": {
+    "sk": "/404.html",
+    "cs": "/cs/404.html",
+    "en": "/en/404.html"
+  }
+}

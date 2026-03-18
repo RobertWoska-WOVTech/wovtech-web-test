@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Networking in infrastructure design | WOV Tech</title>
+  <meta name="description" content="Networking in infrastructure design: segmentation, trust boundaries, routing, access and the minimum standard for operability." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/en/infrastructure-design/networking-in-infrastructure-design.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/navrh-infrastruktury/networking-v-infra-navrhu.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/navrh-infrastruktury/networking-v-navrhu-infrastruktury.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/infrastructure-design/networking-in-infrastructure-design.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/navrh-infrastruktury/networking-v-infra-navrhu.html" />
+  <meta property="og:title" content="Networking in infrastructure design | WOV Tech" />
+  <meta property="og:description" content="Networking in infrastructure design: segmentation, trust boundaries, routing, access and the minimum standard for operability." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/en/infrastructure-design/networking-in-infrastructure-design.html" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/en/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Secure • Stable • Efficient</span></span>
+      </a>
+      <div class="menu">
+        <a href="/en/infrastructure-design.html">Infrastructure Design</a>
+        <a href="/en/services.html">Services</a>
+        <a href="/en/articles.html">Articles</a>
+        <a class="cta" href="/en/contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>Networking in infrastructure design: what must be clear</h1><p>Networking is not a separate topic only for network engineers. It is a shared layer that directly affects availability, security and incident response.</p><div class='notice' style='margin-top:16px'>Segmentation, firewall rules, access model and routing (on-prem ↔ cloud) must be named and documented – otherwise both risk and incident time grow.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Questions worth answering</h2><ul class='list'><li>What is the segmentation model and where are the trust boundaries?</li><li>Where are firewall boundaries, who owns them and what is the change process?</li><li>How is access handled (VPN/bastion/SSO, least privilege, time-limited access)?</li><li>How does routing work between on-prem and cloud?</li><li>Can you debug the network quickly (flow logs, trace and a standard triage procedure)?</li></ul><div class='hr'></div><h2>Typical risks</h2><ul class='list'><li><b>Long incidents:</b> without clear boundaries, triage becomes guesswork.</li><li><b>Security risk:</b> temporary rules and exceptions stay forever.</li><li><b>Unclear ownership:</b> routing/firewall/DNS issues bounce between teams.</li></ul><div class='hr'></div><p><b>Related:</b></p><ul class='list'><li><a href='/en/services/ddi-dns-dhcp-ipam.html'>DDI</a></li><li><a href='/en/services/cloud-aws-azure.html'>Cloud ops</a></li><li><a href='/en/infrastructure-design/access-and-identity.html'>Access & identity</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Secure • Stable • Efficient</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • Company ID 57413878 • Tax ID 2122704034 • VAT ID SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/en/privacy-policy.html">Privacy Policy</a>
+        <a href="/en/terms-and-conditions.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Design and stabilisation of IT infrastructure: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), infrastructure monitoring, log management and backup."}</script>
+</body>
+</html>

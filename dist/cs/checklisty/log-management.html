@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log management: co si promyslet | WOV Tech</title>
+  <meta name="description" content="Otázky před návrhem log managementu: zdroje logů, normalizace, retence, náklady, citlivá data, ownership a použití při incidentu a auditu." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/cs/checklisty/log-management.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/checklisty/log-management.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/checklisty/log-management.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/checklists/log-management.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/checklisty/log-management.html" />
+  <meta property="og:title" content="Log management: co si promyslet | WOV Tech" />
+  <meta property="og:description" content="Otázky před návrhem log managementu: zdroje logů, normalizace, retence, náklady, citlivá data, ownership a použití při incidentu a auditu." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/cs/checklisty/log-management.html" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Přeskočit na obsah</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Hlavná navigácia">
+      <a class="brand" href="/cs/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Bezpečné • Stabilní • Efektivní</span></span>
+      </a>
+      <div class="menu">
+        <a href="/cs/navrh-infrastruktury.html">Návrh infra</a>
+        <a href="/cs/sluzby.html">Služby</a>
+        <a href="/cs/clanky.html">Články</a>
+        <a class="cta" href="/cs/kontakt.html">Kontakt</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>Log management: co si promyslet před návrhem</h1><p>Logy mají hodnotu jen tehdy, když podporují <b>incident triage</b>, <b>auditovatelnost</b> a <b>provozní rozhodování</b>. Před návrhem si ujasněte účely, vlastnictví a nákladový model.</p><div class='notice' style='margin-top:16px'>Bez jasných use-cases, normalizace a retence se z logů stává drahé úložiště bez hodnoty.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Klíčové otázky</h2><ul class='list'><li>Na co logy skutečně potřebujete: incidenty, audit, forenzní analýzu, výkon?</li><li>Které zdroje jsou kritické: identity, DNS, edge, systémy, aplikace, DB?</li><li>Umíte logy rychle vyhledat a korelovat při incidentu?</li><li>Máte dohodnutá klíčová pole jako user, host, service, request_id, severity?</li><li>Jak vypadá operativní a auditní retence?</li><li>Znáte objemy, růst a cenu za ingest/ukládání/prohledávání?</li><li>Jak řešíte PII, maskování a audit přístupů k logům?</li><li>Kdo vlastní ingest, parsing a změny při nových formátech?</li></ul><div class='hr'></div><h2>Praktický start</h2><p>Začněte s malým, ale kvalitním rozsahem: vyberte 3–5 nejdůležitějších zdrojů, domluvte společná pole a nastavte retenci podle účelu.</p><div class='hr'></div><h2>Související</h2><ul class='list'><li><a href='/cs/navrh-infrastruktury/monitoring-vs-logy.html'>Monitoring vs logy</a></li><li><a href='/cs/navrh-infrastruktury/pristupy-a-identita.html'>Přístupy & identita</a></li><li><a href='/cs/navrh-infrastruktury/zalohy-a-obnova.html'>Zálohy a obnova</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Bezpečné • Stabilní • Efektivní</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • IČO 57413878 • DIČ 2122704034 • IČ DPH SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/cs/ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+        <a href="/cs/obchodni-podminky.html">Obchodní podmínky</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Návrh a stabilizace IT infrastruktury: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), monitoring infrastruktury, log management a zálohování."}</script>
+</body>
+</html>

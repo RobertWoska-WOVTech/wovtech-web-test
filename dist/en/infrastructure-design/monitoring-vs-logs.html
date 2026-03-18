@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monitoring vs logs | WOV Tech</title>
+  <meta name="description" content="What monitoring solves and what logs solve – and why one fails without the other." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/en/infrastructure-design/monitoring-vs-logs.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/infrastructure-design/monitoring-vs-logs.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <meta property="og:title" content="Monitoring vs logs | WOV Tech" />
+  <meta property="og:description" content="What monitoring solves and what logs solve – and why one fails without the other." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/en/infrastructure-design/monitoring-vs-logs.html" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/en/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Secure • Stable • Efficient</span></span>
+      </a>
+      <div class="menu">
+        <a href="/en/infrastructure-design.html">Infrastructure Design</a>
+        <a href="/en/services.html">Services</a>
+        <a href="/en/articles.html">Articles</a>
+        <a class="cta" href="/en/contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>Monitoring vs logs: what they solve and why one fails without the other</h1><p>Monitoring and logs are often mixed together. In infrastructure design they answer different questions: monitoring = <b>what is happening</b>, logs = <b>why it is happening</b>.</p><div class='notice' style='margin-top:16px'>Monitoring tells you there is a problem and what the impact is. Logs tell you why the problem happened.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Questions worth answering</h2><ul class='list'><li>What is a critical service for us and what is merely nice-to-have?</li><li>Who responds to alerts and what reaction time is expected?</li><li>What is an incident and what is just information?</li><li>Do we have a runbook or at least a minimum triage path?</li><li>Can we use logs to prove the cause quickly, not only see the symptom?</li></ul><div class='hr'></div><h2>Practical conclusion</h2><ul class='list'><li>The most common mistake is having a lot of data with no context, which creates noise and panic.</li><li>A good design defines a minimum set of metrics, alerts and logs that are actionable.</li><li>If you are starting out, it is better to have a small number of alerts you really act on than hundreds you ignore.</li></ul><div class='hr'></div><p><b>Related:</b></p><ul class='list'><li><a href='/en/services/infrastructure-monitoring.html'>Infrastructure monitoring</a></li><li><a href='/en/services/log-management.html'>Log management</a></li><li><a href='/en/infrastructure-design/incident-and-change-processes.html'>Incident & change processes</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Secure • Stable • Efficient</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • Company ID 57413878 • Tax ID 2122704034 • VAT ID SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/en/privacy-policy.html">Privacy Policy</a>
+        <a href="/en/terms-and-conditions.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Design and stabilisation of IT infrastructure: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), infrastructure monitoring, log management and backup."}</script>
+</body>
+</html>

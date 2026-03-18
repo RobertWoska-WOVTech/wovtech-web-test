@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monitoring vs logy | WOV Tech</title>
+  <meta name="description" content="Co řeší monitoring a co řeší logy – a proč jedno bez druhého selhává." />
+  <meta name="robots" content="index,follow,noarchive" />
+  <link rel="canonical" href="https://wovtech.sk/cs/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <link rel="alternate" hreflang="sk" href="https://wovtech.sk/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <link rel="alternate" hreflang="cs" href="https://wovtech.sk/cs/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <link rel="alternate" hreflang="en" href="https://wovtech.sk/en/infrastructure-design/monitoring-vs-logs.html" />
+  <link rel="alternate" hreflang="x-default" href="https://wovtech.sk/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <meta property="og:title" content="Monitoring vs logy | WOV Tech" />
+  <meta property="og:description" content="Co řeší monitoring a co řeší logy – a proč jedno bez druhého selhává." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wovtech.sk/cs/navrh-infrastruktury/monitoring-vs-logy.html" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Přeskočit na obsah</a>
+  
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Hlavná navigácia">
+      <a class="brand" href="/cs/">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech<span class="sub">Bezpečné • Stabilní • Efektivní</span></span>
+      </a>
+      <div class="menu">
+        <a href="/cs/navrh-infrastruktury.html">Návrh infra</a>
+        <a href="/cs/sluzby.html">Služby</a>
+        <a href="/cs/clanky.html">Články</a>
+        <a class="cta" href="/cs/kontakt.html">Kontakt</a>
+      </div>
+    </nav>
+  </div>
+</header>
+  <main id="content"><section class='hero'><div class='grain' aria-hidden='true'></div><div class='container'><div class='card pad-lg'><h1>Monitoring vs logy: co řeší a proč jedno bez druhého selhává</h1><p>Monitoring a logy se často zaměňují. V návrhu infrastruktury odpovídají na jiné otázky: monitoring = <b>co se děje</b>, logy = <b>proč se to děje</b>.</p><div class='notice' style='margin-top:16px'>Monitoring odpovídá, že je problém a jaký má dopad. Logy odpovídají, proč problém vznikl.</div></div></div></section><section class='section'><div class='container'><div class='card pad'><h2>Otázky, které si je třeba zodpovědět</h2><ul class='list'><li>Co je pro nás kritická služba a co je jen nice-to-have?</li><li>Kdo reaguje na alert a jaký je očekávaný čas reakce?</li><li>Co je incident a co je jen informace?</li><li>Máme runbook nebo alespoň základní postup pro triage?</li><li>Umíme z logů rychle doložit příčinu, nejen vidět symptom?</li></ul><div class='hr'></div><h2>Praktický závěr</h2><ul class='list'><li>Nejčastější chyba je mít hodně dat bez kontextu, což generuje šum a paniku.</li><li>Dobrý návrh stanoví minimální set metrik, alertů a logů, které jsou actionable.</li><li>Pokud začínáte, je lepší mít málo alertů, které opravdu řešíte, než stovky, které ignorujete.</li></ul><div class='hr'></div><p><b>Související:</b></p><ul class='list'><li><a href='/cs/sluzby/monitoring-infrastruktury.html'>Monitoring infrastruktury</a></li><li><a href='/cs/sluzby/log-management.html'>Log management</a></li><li><a href='/cs/navrh-infrastruktury/incident-a-change-procesy.html'>Incident & Change procesy</a></li></ul></div></div></section></main>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:10px">
+        <img class="brand-logo" src="/assets/img/logo-mark.png" alt="WOV Tech logo" width="36" height="36" loading="lazy" />
+        <span>WOV Tech s. r. o.<span class="sub">Bezpečné • Stabilní • Efektivní</span></span>
+      </div>
+      <small>© 2026 WOV Tech s. r. o. • IČO 57413878 • DIČ 2122704034 • IČ DPH SK2122704034</small>
+      <div style="margin-top:8px; display:flex; gap:10px; flex-wrap:wrap">
+        <a href="/cs/ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+        <a href="/cs/obchodni-podminky.html">Obchodní podmínky</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"WOV Tech s. r. o.","url":"https://wovtech.sk","email":"kontakt@wovtech.sk","telephone":"+421951112964","areaServed":["SK","CZ","EN"],"description":"Návrh a stabilizace IT infrastruktury: DDI (DNS/DHCP/IPAM), NTP, cloud (AWS/Azure/GCP), monitoring infrastruktury, log management a zálohování."}</script>
+</body>
+</html>
