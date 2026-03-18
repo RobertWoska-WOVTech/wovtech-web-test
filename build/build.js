@@ -134,13 +134,13 @@ function generateSitemap(){
 }
 
 function cleanDist(){
-  const dist = path.join(root, 'dist');
-  fs.rmSync(dist, { recursive: true, force: true });
-  fs.mkdirSync(dist, { recursive: true });
+  const docs = path.join(root, 'docs');
+  fs.rmSync(docs, { recursive: true, force: true });
+  fs.mkdirSync(docs, { recursive: true });
 }
 
 function copyAssets(){
-  fs.cpSync(path.join(root, 'assets'), path.join(root, 'dist', 'assets'), { recursive: true });
+  fs.cpSync(path.join(root, 'assets'), path.join(root, 'docs', 'assets'), { recursive: true });
 }
 
 function main(){
@@ -150,12 +150,12 @@ function main(){
     const data = loadLang(lang);
     for (const [pageKey, page] of Object.entries(data.pages)){
       const route = routes[pageKey][lang];
-      const outPath = path.join(root, 'dist', localPath(route));
+      const outPath = path.join(root, 'docs', localPath(route));
       ensureDir(outPath);
       fs.writeFileSync(outPath, renderPage({site:data.site, pageKey, page, lang}), 'utf8');
     }
   }
-  fs.writeFileSync(path.join(root, 'dist', 'sitemap.xml'), generateSitemap(), 'utf8');
+  fs.writeFileSync(path.join(root, 'docs', 'sitemap.xml'), generateSitemap(), 'utf8');
 }
 
 main();
